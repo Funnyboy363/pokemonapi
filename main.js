@@ -14,9 +14,9 @@ pokemon.forEach(poke => {
     let cap = document.createElement('figcaption')
     cap.textContent = poke.ename
     img.src = `images/${poke.id}${poke.ename}.png`
-    fig.appendChild(cap)
     pokeContainer.appendChild(fig)
     fig.appendChild(img)
+    fig.appendChild(cap)
 })
 
 
