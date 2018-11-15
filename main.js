@@ -5,9 +5,10 @@ console.log(pokemon)
 const pokeContainer = document.querySelector('#container')
 let count = 0
 
+
+
 pokemon.forEach(poke => {
     count++
-    let numPrefix = count > 9 ? '0' : '00'
     console.log(`${poke.id}${poke.ename}`)
     let fig = document.createElement('figure')
     let img = document.createElement('img')
