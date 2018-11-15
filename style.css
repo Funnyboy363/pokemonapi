@@ -1,18 +1,110 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* end of css reset */
+
+
+
+
+
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 #container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+h1 {
+    text-align: center;
+    font-size: 7rem;
+    color: #facb04;
+    margin-top: 1rem;
+}
+
+
+.vid1 {
+    display: none;
+}
+
+iframe.pokevideo {
+    margin-top: 7rem;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 figure {
+    width: 300px;
     border: thin #c0c0c0 solid;
     display: flex;
     flex-flow: column;
-    margin: 8px;
     padding: 5px;
     box-shadow: 5px 5px 5px #666;
+    background-color: #f2b66a;
+    border: 10px solid #facb04;
+    margin: 15px 6px;
+    border-radius: 1.5rem;
 }
 
 figure img {
@@ -20,16 +112,32 @@ figure img {
 }
 
 figcaption {
-    background-color: #222;
+    background-color: #9f4d39;
     color: #fff;
     font: italic smaller sans-serif;
     padding: 3px;
-    text-align: center;
+    text-align: left;
+    font-size: 1rem;
+    border-radius: 10px;
 }
 
 
 
-body { font-family: sans-serif; }
+body { font-family: sans-serif; 
+background-color: #1d2b5d;
+}
+
+
+figure.photo {
+    box-shadow: none;
+    border: none;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background-color: #1d2b5d;
+}
+
+
 
 .scene {
   width: 200px;
@@ -71,4 +179,26 @@ body { font-family: sans-serif; }
 .card__face--back {
   background: blue;
   transform: rotateY(180deg);
+}
+
+
+
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #facb04;
+    color: #3062a7;
+    font-size: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #3062a7;
+    font-weight: 800;
+}
+
+footer a:hover {
+    color: #1d2b5d;
 }

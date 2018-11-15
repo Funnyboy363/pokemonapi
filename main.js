@@ -15,8 +15,12 @@ pokemon.forEach(poke => {
     cap.textContent = poke.ename
     img.src = `images/${poke.id}${poke.ename}.png`
     pokeContainer.appendChild(fig)
-    fig.appendChild(img)
     fig.appendChild(cap)
+    fig.appendChild(img)
+    
 })
+
+
+
 
 
